@@ -1,0 +1,600 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Waave AI — Market intelligence, in motion</title>
+<meta name="description" content="Turn market signals into smarter decisions with Waave AI market intelligence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F8FC;--ink:#0F1B2D;--mut:#5B6B80;--bl:#328FE6;--bl2:#58A7EE;--lt:#DCEEFF;--w:#fff;--ln:#E2EAF3;--pe:#FFE6D6;--li:#E9E3FF;--mi:#D9F5E8;--sa:#F6EBD3;--sk:#D6ECFB;--sh:0 1px 3px rgba(15,27,45,.08);--sh2:0 12px 28px -8px rgba(15,27,45,.16);--ease:cubic-bezier(.16,1,.3,1);--d1:.3s;--d2:.6s;--d3:.9s;--st:.08s}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font:400 1rem/1.6 'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden}
+h1,h2,h3,.brand{font-family:Manrope,system-ui,sans-serif;line-height:1.15}
+h1{font-size:clamp(2.2rem,5.5vw,4rem);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,3.6vw,2.6rem);font-weight:800;letter-spacing:-.01em}
+h3{font-size:1.15rem;font-weight:700;margin-bottom:6px}
+p{color:var(--mut)}a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--bl);outline-offset:2px}
+.sh{max-width:1200px;margin:auto;padding-inline:24px}
+.gt{background:linear-gradient(90deg,var(--bl),#7C9CFF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mh{color:#5B6B80}
+.ey{display:inline-flex;gap:8px;align-items:center;font:700 .72rem 'DM Sans';letter-spacing:.12em;color:#1D6FBF;margin-bottom:16px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--bl);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 6px rgba(50,143,230,.18)}}
+header{position:sticky;top:0;z-index:50;background:rgba(245,248,252,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+.hb{display:flex;align-items:center;gap:24px;height:68px}
+.brand{display:flex;gap:10px;align-items:center;font-weight:800;font-size:1.2rem}
+.brand b{font-weight:800;color:var(--bl)}
+.bm{width:32px;height:32px;border-radius:10px;background:var(--ink) url(data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%2032%2032%27%3E%3Cpath%20d=%27M5%2018c3-9%205-9%208%200s5%209%208%200%203-6%206-6%27%20fill=%27none%27%20stroke=%27%2358A7EE%27%20stroke-width=%273%27%20stroke-linecap=%27round%27/%3E%3C/svg%3E) center/70% no-repeat;flex:none}.bm i{display:none}
+nav{display:flex;gap:6px;margin-inline:auto}
+nav a{padding:8px 14px;border-radius:99px;font-weight:500;font-size:.92rem;color:var(--mut);transition:.2s}
+nav a:hover{color:var(--ink);background:var(--w)}nav a.on{background:var(--w);color:var(--ink);box-shadow:var(--sh)}
+.btn{display:inline-flex;gap:8px;align-items:center;padding:12px 22px;border-radius:99px;font:600 .95rem 'DM Sans';border:1px solid var(--ln);background:var(--w);cursor:pointer;position:relative;overflow:hidden;transition:transform var(--d1) var(--ease),box-shadow var(--d1) var(--ease),background-color var(--d1),border-color var(--d1)}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--sh2)}
+.bp{background:var(--ink);color:#fff;border-color:var(--ink)}.bl{background:#fff;color:var(--ink)}
+.mt{display:none;width:44px;height:44px;border-radius:12px;border:1.5px solid var(--ink);background:var(--w);color:var(--ink);cursor:pointer;place-items:center}.mt svg{display:block}
+.view{display:none}.view.on{display:block;animation:vin .55s ease both}
+@keyframes vin{from{opacity:0;transform:translateY(14px)}}
+section{padding:88px 0}
+.sec-h{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap;margin-bottom:44px}
+.sec-h p{max-width:420px}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:64px}
+.hero p.l{font-size:1.15rem;margin:20px 0 28px;max-width:520px}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.proof{display:flex;gap:16px;align-items:center;margin-top:36px;flex-wrap:wrap}
+.proof .av{display:flex}.av span{width:34px;height:34px;border-radius:50%;background:var(--lt);border:2px solid var(--bg);display:grid;place-items:center;font:700 .8rem Manrope;margin-inline-end:-8px}
+.proof small,.note{color:var(--mut);font-size:.8rem}.proof strong{display:block}
+.note{margin-top:12px;display:block}
+.amb{position:fixed;width:520px;height:520px;border-radius:50%;filter:blur(90px);opacity:.35;z-index:-1;animation:drift 18s ease-in-out infinite}
+.a1{top:-160px;right:-120px;background:var(--bl2)}.a2{bottom:-200px;left:-160px;background:#C9B8FF;animation-delay:-8s}
+@keyframes drift{50%{transform:translate(40px,30px) scale(1.08)}}
+.vis{position:relative;min-height:500px;display:grid;place-items:center}
+.orb{position:absolute;border:1px dashed var(--bl2);border-radius:50%;opacity:.5;animation:spin 30s linear infinite}
+.o1{width:420px;height:420px}.o2{width:300px;height:300px;animation-direction:reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ph{width:270px;background:var(--ink);border-radius:36px;padding:10px;box-shadow:var(--sh2);position:relative;animation:flt 7s ease-in-out infinite}
+@keyframes flt{50%{translate:0 -12px}}
+.ps{background:var(--bg);border-radius:28px;padding:18px 16px;display:grid;gap:10px}
+.ps h4{font:800 1.05rem Manrope}.ps small{color:var(--mut);font-size:.72rem}
+.pm{background:var(--w);border-radius:14px;padding:12px;display:flex;justify-content:space-between;align-items:center}
+.pm strong{font:800 1.4rem Manrope;display:block}.up{background:var(--mi);color:#177A4B;border-radius:99px;padding:2px 8px;font-size:.72rem;font-weight:700}
+.pr{display:flex;gap:10px;align-items:center;background:var(--w);border-radius:12px;padding:8px 10px;font-size:.8rem}.pr b{display:block}.pr strong{margin-inline-start:auto;color:var(--bl)}
+.og{width:32px;height:32px;border-radius:10px;display:grid;place-items:center}
+.fcard{position:absolute;background:var(--w);border:1px solid var(--ln);border-radius:16px;padding:12px 16px;box-shadow:var(--sh2);animation:flt 6s ease-in-out infinite;display:flex;gap:12px;align-items:center}
+.fcard small{display:block;color:var(--mut);font-size:.72rem}.fcard strong{font:800 1.1rem Manrope}
+.fc1{top:12%;inset-inline-start:-2%;animation-delay:-2s}.fc2{bottom:12%;inset-inline-end:-2%;animation-delay:-4s}
+.sig{display:flex;gap:3px;align-items:flex-end;height:28px}.sig i{width:5px;background:var(--bl);border-radius:2px;animation:eq 1.6s ease-in-out infinite}.sig i:nth-child(odd){animation-delay:-.6s}
+@keyframes eq{50%{transform:scaleY(.45)}}.sig i{transform-origin:bottom}
+.strip{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:16px;background:var(--w);border:1px solid var(--ln);border-radius:20px;padding:24px;padding-block:24px}
+.strip>div:first-child{font:700 .8rem 'DM Sans';letter-spacing:.1em;color:var(--mut)}.strip>div:first-child strong{color:var(--ink)}
+.si{display:flex;gap:12px;align-items:center}.si span{width:40px;height:40px;border-radius:12px;background:var(--lt);display:grid;place-items:center;color:var(--bl)}.si small{display:block;color:var(--mut);font-size:.8rem}
+.card{background:var(--w);border:1px solid var(--ln);border-radius:20px;padding:24px;box-shadow:var(--sh);transition:transform var(--d1) var(--ease),translate var(--d1) var(--ease),box-shadow var(--d1),border-color var(--d1)}
+.card:hover{transform:translateY(-5px);box-shadow:var(--sh2);border-color:var(--bl2)}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.ci{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:1.2rem;margin-bottom:16px;transition:transform .3s}
+.card:hover .ci{transform:rotate(-8deg) scale(1.08)}
+.card .lk{display:inline-block;margin-top:14px;font-weight:600;color:#1D6FBF;font-size:.9rem}
+.idx{float:right;font-size:.72rem;color:#5B6B80;font-weight:700}
+.blue{background:var(--sk)}.peach{background:var(--pe)}.lilac{background:var(--li)}.mint{background:var(--mi)}.sand{background:var(--sa)}.sky{background:var(--lt)}
+.il{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}
+.art{position:relative;aspect-ratio:1;max-width:460px;margin:auto;width:100%;display:grid;place-items:center;border-radius:32px;background:radial-gradient(circle,var(--lt),transparent 70%)}
+.core{width:120px;height:120px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:800 2rem Manrope;z-index:2;box-shadow:0 0 0 14px rgba(50,143,230,.15)}
+.rg{position:absolute;border:1px solid var(--bl2);border-radius:50%;animation:spin 24s linear infinite}.r1{inset:14%}.r2{inset:2%;animation-direction:reverse}
+.nd{position:absolute;background:var(--w);border:1px solid var(--ln);border-radius:99px;padding:6px 14px;font-weight:600;font-size:.8rem;box-shadow:var(--sh);animation:flt 5s ease-in-out infinite}
+.n1{top:10%;left:30%}.n2{top:42%;right:0;animation-delay:-1s}.n3{bottom:10%;left:26%;animation-delay:-2s}.n4{top:42%;left:0;animation-delay:-3s}
+.trend .pic,.ca{height:150px;border-radius:14px;display:grid;place-items:center;font-size:3.2rem;margin-bottom:16px;position:relative;overflow:hidden;color:rgba(15,27,45,.55)}
+.pic:before,.ca:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-100%);animation:shine 4.5s infinite}
+@keyframes shine{60%,100%{transform:translateX(100%)}}
+.pic span,.ca span{transition:transform .5s;display:inline-block;animation:flt 6s ease-in-out infinite}
+.card:hover .pic span,.card:hover .ca span{transform:scale(1.18) rotate(6deg)}
+.tt{display:flex;justify-content:space-between;font-size:.72rem;font-weight:700;color:var(--mut);margin-bottom:10px;letter-spacing:.06em}
+.gr{color:#177A4B;background:var(--mi);padding:2px 10px;border-radius:99px}
+.mtr{height:6px;border-radius:9px;background:var(--ln);margin-top:14px;overflow:hidden}.mtr span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--bl),var(--bl2));border-radius:9px;transition:width 1.2s .3s cubic-bezier(.2,.8,.2,1)}
+.in .mtr span,.mtr.in span{width:var(--v)}
+.dis{margin-top:24px;background:var(--lt);border-radius:12px;padding:12px 16px;font-size:.88rem;color:#24527F}
+.dw{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center}
+.dw ul{list-style:none;padding:0;margin-top:20px;display:grid;gap:8px;font-weight:500}.dw li:before{content:"✓";color:var(--bl);margin-inline-end:8px;font-weight:800}
+.win{background:var(--w);border:1px solid var(--ln);border-radius:20px;box-shadow:var(--sh2);overflow:hidden;transition:transform .5s}.win:hover{transform:perspective(1200px) rotateY(-3deg) translateY(-4px)}
+.wt{display:flex;gap:6px;align-items:center;padding:12px 16px;background:var(--bg);border-bottom:1px solid var(--ln);font-size:.72rem;color:var(--mut);font-weight:700}
+.wt i{width:10px;height:10px;border-radius:50%;background:var(--ln)}.wt em{margin-inline-start:auto;font-style:normal;color:var(--bl)}
+.wb{padding:20px;display:grid;gap:14px}
+.mg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.mm{background:var(--bg);border-radius:12px;padding:10px 12px}.mm small{font-size:.7rem;color:var(--mut)}.mm b{display:block;font:800 1.15rem Manrope}.mm span{font-size:.72rem;color:#177A4B;font-weight:700}
+.ch{width:100%;height:150px;display:block}
+.dr{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.6s ease}
+.in .dr,.dr.in{stroke-dashoffset:0}
+.wf{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stp{position:relative}.stp .nm{font:800 2rem Manrope;color:var(--lt);-webkit-text-stroke:1px var(--bl2)}
+.stp .sy{float:right;width:40px;height:40px;border-radius:12px;background:var(--lt);display:grid;place-items:center;color:var(--bl)}
+.fin{background:var(--ink);color:#fff;border-radius:32px;padding:80px 32px;text-align:center;position:relative;overflow:hidden}
+.fin h2{color:#fff}.fin h2 span{color:var(--bl2)}.fin p{color:#B8C7DA;margin:16px 0 28px}.fin .ey{color:var(--bl2)}
+.fin .cb{margin-top:28px;font-size:.72rem;letter-spacing:.12em;color:#7C8DA5;font-weight:700}
+.fin .ob{position:absolute;width:320px;height:320px;border-radius:50%;background:var(--bl);opacity:.25;filter:blur(70px);animation:drift 14s infinite}
+.fin .ob:first-child{top:-120px;left:-80px}.fin .ob:nth-child(2){bottom:-140px;right:-60px;animation-delay:-6s}
+.fin>*{position:relative}
+.ph-h{padding:64px 0 32px}.ph-h p{max-width:640px;font-size:1.1rem;margin-top:16px}
+.pn{background:var(--w);border:1px solid var(--ln);border-radius:24px;padding:28px;box-shadow:var(--sh)}
+.tb{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.tb h2{font-size:1.4rem}.tb p{font-size:.9rem}
+.fi{padding:10px 16px;border-radius:99px;border:1px solid var(--ln);background:var(--bg);font:400 .95rem 'DM Sans';min-width:240px}
+.pl{display:inline-block;background:var(--lt);color:#24527F;font-size:.72rem;font-weight:700;padding:4px 12px;border-radius:99px;letter-spacing:.06em}
+.em{text-align:center;padding:32px;color:var(--mut)}[hidden]{display:none!important}
+.ir{display:grid;grid-template-columns:48px 1fr auto;gap:16px;align-items:center;padding:18px 0;border-bottom:1px solid var(--ln);transition:background .2s,padding .2s}
+.ir:last-child{border:0}.ir:hover{background:var(--bg);padding-inline:12px;border-radius:12px}
+.is{width:44px;height:44px;border-radius:14px;background:var(--lt);display:grid;place-items:center;color:var(--bl);font-size:1.1rem}
+.sc{text-align:center}.sc strong{font:800 1.3rem Manrope;display:block}.sc small{font-size:.72rem;color:var(--mut)}
+.pcta{margin-top:32px;background:var(--w);border:1px solid var(--ln);border-radius:24px;padding:28px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:20px}
+.sg strong{font:800 1.9rem Manrope;display:block}.sg span{color:#177A4B;font-weight:700;font-size:.85rem}.sg small{color:var(--mut)}
+.dl{display:grid;grid-template-columns:1.4fr 1fr;gap:20px;margin-bottom:20px}
+.rc{display:flex;gap:4px;background:var(--bg);padding:4px;border-radius:99px}.rc button{border:0;background:none;padding:6px 14px;border-radius:99px;font:600 .85rem 'DM Sans';cursor:pointer;color:var(--mut)}.rc button[aria-pressed=true]{background:var(--w);color:var(--ink);box-shadow:var(--sh)}
+.bc{display:flex;gap:14px;align-items:flex-end;height:200px;border-bottom:1px solid var(--ln)}
+.bg{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px}
+.bg i{width:100%;max-width:44px;height:var(--h);background:linear-gradient(var(--bl2),var(--bl));border-radius:8px 8px 0 0;transform:scaleY(0);transform-origin:bottom;transition:transform 1s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d)}
+.in .bg i,.bc.in .bg i{transform:scaleY(1)}.bg small{font-size:.68rem;color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}th{text-align:start;font-size:.72rem;letter-spacing:.08em;color:var(--mut);padding:10px 12px}td{padding:14px 12px;border-top:1px solid var(--ln)}tbody tr{transition:background .2s}tbody tr:hover{background:var(--bg)}.tw{overflow-x:auto}
+.up2{color:#177A4B;font-weight:700}
+footer{border-top:1px solid var(--ln);padding:40px 0;margin-top:40px}
+.fr{display:flex;gap:24px;align-items:center;flex-wrap:wrap;justify-content:space-between}.fr span,.fr small{color:var(--mut);font-size:.9rem}.fl{display:flex;gap:20px}.fl a{color:var(--mut)}.fl a:hover{color:var(--ink)}
+.lg{display:inline-flex;border:1px solid var(--ink);border-radius:4px;overflow:hidden;font:600 .85rem 'DM Sans',Cairo,sans-serif}
+.lg button{border:0;background:var(--w);color:var(--ink);padding:8px 12px;min-width:44px;cursor:pointer;font:inherit}
+.lg button+button{border-inline-start:1px solid var(--ink)}
+.lg button[aria-pressed=true]{background:var(--ink);color:#fff}
+.pf{width:150px;background:var(--ink);border-radius:26px;padding:6px;box-shadow:var(--sh2);margin:0 auto 16px;transition:transform .4s}
+.pf .sc2{border-radius:20px;padding:12px 10px;display:grid;gap:8px;min-height:230px;align-content:start;font-size:.72rem;color:var(--ink)}
+.pf .sc2:before{content:"";width:34px;height:4px;border-radius:9px;background:rgba(15,27,45,.25);margin:0 auto 4px}
+.pf .big{font-size:2.2rem;text-align:center;line-height:1}
+.pf b{font:800 .85rem Manrope,Cairo,sans-serif}
+.pf .bars2{display:flex;gap:4px;align-items:flex-end;height:48px;direction:ltr}.pf .bars2 i{flex:1;background:var(--bl);border-radius:3px 3px 0 0;height:var(--h)}
+.pf .mt2{height:5px;border-radius:9px;background:rgba(15,27,45,.12);overflow:hidden}.pf .mt2 i{display:block;height:100%;background:var(--bl);width:var(--v)}
+.pf .row{display:flex;justify-content:space-between;gap:6px;background:rgba(255,255,255,.7);border-radius:8px;padding:5px 7px}
+.card:hover .pf{transform:translateY(-4px) rotate(-1.5deg)}
+.pbig{width:230px;position:relative;z-index:2;margin:0}.pbig .sc2{min-height:340px}
+html[dir=rtl] *{letter-spacing:0!important}
+html[dir=rtl] body,html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3,html[dir=rtl] .brand,html[dir=rtl] .fi,html[dir=rtl] .btn,html[dir=rtl] th{font-family:Cairo,system-ui,sans-serif}
+html[dir=rtl] .idx,html[dir=rtl] .stp .sy{float:left}
+html[dir=rtl] .ch,html[dir=rtl] .bc,html[dir=rtl] .rc{direction:ltr}
+.js .rv{opacity:0;transform:translateY(32px) scale(.985);filter:blur(6px);transition:opacity var(--d3) var(--ease),transform 1.1s var(--ease),filter var(--d3) var(--ease);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none;filter:none}
+.js .rv.rd{transition:transform var(--d1) var(--ease),translate var(--d1) var(--ease),box-shadow var(--d1),border-color var(--d1),opacity var(--d1);transition-delay:0s}
+.vis{translate:0 calc(var(--py,0)*1px)!important}
+.view.on .vis{animation:rise 1.3s cubic-bezier(.2,.8,.2,1) .2s both}
+@keyframes rise{from{opacity:0;transform:translateY(140px);filter:blur(14px)}}
+@media(max-width:900px){
+.hero,.il,.dw,.dl{grid-template-columns:1fr}.wf{grid-template-columns:1fr 1fr}.strip{grid-template-columns:1fr}
+.mt{display:block;margin-inline-start:auto}.hb>.btn{display:none}
+nav{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--w);padding:12px 24px;border-bottom:1px solid var(--ln)}nav.open{display:flex}
+section{padding:60px 0}.vis{min-height:460px}.fc1{inset-inline-start:0}.fc2{inset-inline-end:0}
+.ir{grid-template-columns:44px 1fr}.ir .sc{grid-column:2;text-align:start}}
+.fm{display:grid;gap:18px;max-width:640px}.fm label{display:grid;gap:6px;font-weight:600;font-size:.95rem}.fm input,.fm select,.fm textarea{font:400 1rem 'DM Sans',Cairo,sans-serif;padding:12px 14px;border:1px solid #8795A8;border-radius:12px;background:var(--w);color:var(--ink)}.fm textarea{min-height:140px;resize:vertical}.fm [aria-invalid=true]{border-color:#B42318}.fm .er{color:#B42318;font-size:.85rem;font-weight:500;min-height:1.1em}
+.fq2{max-width:820px;margin:auto}details.card{padding:0;margin-bottom:12px}details summary{cursor:pointer;padding:18px 22px;font:700 1rem Manrope,Cairo,sans-serif;list-style:none;display:flex;justify-content:space-between;gap:16px}details summary::-webkit-details-marker{display:none}details summary:after{content:'+';color:#1D6FBF;font-size:1.3rem}details[open] summary:after{content:'–'}details p{padding:0 22px 18px}
+@media(max-width:1240px){.mt{display:grid;margin-inline-start:auto}.hb>.btn{display:none}nav{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--w);padding:12px 24px;border-bottom:1px solid var(--ln)}nav.open{display:flex}}
+@media(max-width:520px){.wf{grid-template-columns:1fr}.mg{grid-template-columns:1fr}.fi{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none;filter:none}.vis{translate:none!important}.dr{stroke-dashoffset:0}.bg i{transform:none}.mtr span{width:var(--v)}}
+
+/* ===== Curtain stacking (active only when html.stk is set; see script) ===== */
+html.stk{scroll-behavior:auto}
+html.stk #v-home.on{animation:none}
+/* the CSS entrance would be captured by GSAP as a permanent offset; GSAP plays the entrance instead */
+html.stk #v-home.on .vis{animation:none}
+.stk .scn{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle 460px at 100% 0,rgba(88,167,238,.2),transparent 70%),radial-gradient(circle 460px at 0 100%,rgba(201,184,255,.22),transparent 70%),var(--bg)}
+.stk .scn>.sh{width:100%}
+/* .nx is set by the script on every scene after the first. ScrollTrigger wraps pinned scenes in
+   .pin-spacer, which broke the old `.scn~.scn` sibling selector, so the curtain edge never rendered. */
+.stk .scn.nx{border-radius:28px 28px 0 0;box-shadow:0 -26px 60px -30px rgba(15,27,45,.3)}
+/* scroll (GSAP) owns the entrance of later scenes: neutralise the timed .rv reveal there */
+.stk .scn.nx .rv,.stk .scn .rv.gl,.stk .scn .rv.mo{opacity:1;filter:none;transform:none}
+/* .gl = element whose transform/opacity is scrubbed by GSAP: no CSS transition may lag behind it */
+.stk .scn .gl{transition:translate .3s,box-shadow .3s,border-color .3s,background-color .3s;will-change:transform,opacity}
+/* hover lift/tilt moved off `transform` (GSAP owns it) onto the independent translate property */
+.stk .scn .card.gl:hover{transform:none;translate:0 -5px!important}
+.stk .scn .win.gl:hover{transform:none;translate:0 -4px!important}
+/* phones inside the stacked scenes: decorative float uses `translate`, scroll motion uses transform */
+.stk .scn .pbig{transition:none;animation:flt 6s ease-in-out infinite}
+.stk .scn.nx .trend .pf{animation:flt 6s ease-in-out infinite}
+.stk .scn.nx .trend .card:nth-child(2) .pf{animation-delay:-2s}
+.stk .scn.nx .trend .card:nth-child(3) .pf{animation-delay:-4s}
+/* no bare body strip between the last scene and the footer */
+html.stk footer{margin-top:0}
+.scn-shade{position:absolute;inset:0;background:var(--ink);opacity:0;pointer-events:none;border-radius:inherit;z-index:5}
+
+/* ===== Motion system: micro-interactions, parallax, GSAP-owned inner elements (.mo) ===== */
+.btn:active{transform:translateY(0) scale(.97);box-shadow:var(--sh);transition-duration:.12s}
+.bp:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-120%);pointer-events:none}
+.bp:hover:after{transform:translateX(120%);transition:transform .8s var(--ease)}
+:focus-visible{outline-offset:3px;transition:outline-offset var(--d1) var(--ease)}
+nav a:active,.rc button:active,.lg button:active{transform:scale(.95)}
+.rc button,.lg button,.fl a{transition:background-color var(--d1),color var(--d1),box-shadow var(--d1),transform .15s}
+.fi,.fm input,.fm select,.fm textarea{transition:border-color var(--d1),box-shadow var(--d1),background-color var(--d1)}
+.fi:focus,.fm input:focus,.fm select:focus,.fm textarea:focus{outline:0;border-color:var(--bl);box-shadow:0 0 0 4px rgba(50,143,230,.16);background:var(--w)}
+.card .lk{transition:translate var(--d1) var(--ease)}.card:hover .lk,.card:focus-within .lk{translate:4px -2px}
+.card:focus-within{border-color:var(--bl2);box-shadow:var(--sh2)}
+.is{transition:transform var(--d1) var(--ease)}.ir:hover .is{transform:scale(1.08) rotate(-6deg)}
+.mm,.pm,.pr{transition:translate var(--d1) var(--ease),box-shadow var(--d1)}.mm:hover,.pr:hover{translate:0 -2px;box-shadow:var(--sh)}
+summary{transition:color var(--d1)}summary:hover{color:#1D6FBF}summary:after{transition:transform var(--d1) var(--ease);display:inline-block}details[open] summary:after{transform:rotate(180deg)}
+@keyframes dn{from{opacity:0;transform:translateY(-8px)}}details[open] p{animation:dn var(--d2) var(--ease) both}
+/* scroll-linked parallax via --sp (set in the existing rAF scroll handler); `translate` never collides with GSAP/transform animations */
+.amb.a1{translate:0 calc(var(--sp,0)*-.06px)}.amb.a2{translate:0 calc(var(--sp,0)*-.1px)}
+.orb.o1{translate:0 calc(var(--sp,0)*.05px)}.orb.o2{translate:0 calc(var(--sp,0)*-.04px)}.rg.r1{translate:0 calc(var(--sp,0)*-.03px)}.rg.r2{translate:0 calc(var(--sp,0)*.03px)}
+/* inner elements while GSAP plays their entrance: no CSS transition may lag behind, final values forced */
+.stk .scn .mo{transition:translate var(--d1) var(--ease),box-shadow var(--d1),border-color var(--d1),background-color var(--d1)}
+.stk .scn .mtr span.mo{width:var(--v)}
+.stk .scn .card:hover{transform:none;translate:0 -5px}
+@media(prefers-reduced-motion:reduce){.amb,.orb,.rg{translate:none!important}.btn:active{transform:none}.bp:after{display:none}}
+</style>
+</head>
+<body>
+<div class="amb a1"></div><div class="amb a2"></div>
+<header><div class="sh hb">
+<a class="brand" href="#home" data-v="home" aria-label="Waave AI home"><span class="bm"><i></i><i></i><i></i></span><span>waave<b>AI</b></span></a>
+<nav id="nav" aria-label="Main"><a href="#home" data-v="home">Overview</a><a href="#products" data-v="products">Products</a><a href="#insights" data-v="insights">Insights</a><a href='#how' data-v='how'>How it works</a><a href='#method' data-v='method'>Methodology</a><a href='#faq' data-v='faq'>FAQ</a><a href='#contact' data-v='contact'>Contact</a></nav>
+<a class="btn bp" href="#dashboard" data-v="dashboard">Open dashboard ↗</a>
+<div class="lg" role="group" aria-label="Language"><button data-lg="en" aria-pressed="true">EN</button><button data-lg="ar" aria-pressed="false" lang="ar">عربي</button></div>
+<button class='mt' id='mt' aria-label='Open navigation' aria-controls='nav' aria-expanded='false'><svg width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' aria-hidden='true'><path d='M4 7h16M4 12h16M4 17h16'/></svg></button>
+</div></header>
+
+<main>
+<!-- HOME -->
+<div class="view" id="v-home">
+<div class="scn"><section class="sh hero" style="padding-bottom:40px">
+<div>
+<div class="ey"><span class="dot"></span>MARKET INTELLIGENCE, REIMAGINED</div>
+<h1 class="rv">Turn market signals into <span class="gt">smarter decisions.</span></h1>
+<p class="l rv" style="--d:.1s">Spot emerging product trends, understand demand shifts, and uncover your next opportunity — all in one clear view.</p>
+<div class="acts rv" style="--d:.2s"><a class="btn bp" href="#insights" data-v="insights">Explore market insights ↗</a><a class="btn" href="#dashboard" data-v="dashboard">▶ View dashboard</a></div>
+<div class="proof rv" style="--d:.3s"><div class="av"><span>W</span><span>A</span><span>I</span></div><div><strong>Clarity behind the noise</strong><small>One view. More confident moves.</small></div><div><strong>24.8K</strong><small>signals explored*</small></div></div>
+<small class="note">*Illustrative demo metrics, not live market data.</small>
+</div>
+<div class="vis" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div>
+<div class="fcard fc1"><div class="sig"><i style="height:60%"></i><i style="height:100%"></i><i style="height:70%"></i><i style="height:90%"></i></div><div><small>Opportunity score</small><strong>82 /100</strong></div></div>
+<div class="ph"><div class="ps"><h4>Your market, decoded.</h4><small>Opportunity overview · Demo</small>
+<div class="pm"><div><small>Market momentum</small><strong>+18.6%</strong></div><span class="up">↗ 4.2%</span></div>
+<svg class="ch" style="height:70px" viewBox="0 0 280 92" preserveAspectRatio="none"><path class="dr" pathLength="1" d="M0 76C18 68 24 76 42 60S67 64 82 49 106 58 123 39 148 50 166 29 192 38 208 25 238 30 252 12 269 18 280 4" fill="none" stroke="#328FE6" stroke-width="3" stroke-linecap="round" style="animation:none;stroke-dashoffset:0"/></svg>
+<div class="pr"><span class="og blue">◈</span><span><b>Smart accessories</b><small>Demand accelerating</small></span><strong>+32%</strong></div>
+<div class="pr"><span class="og peach">✦</span><span><b>Home essentials</b><small>Search interest rising</small></span><strong>+24%</strong></div></div></div>
+<div class="fcard fc2"><span class="og mint">↗</span><div><strong>Demand is shifting</strong><small>Smart accessories · Demo signal</small></div></div>
+</div></section>
+
+<section class="sh" style="padding:0 24px"><div class="strip rv"><div>LESS GUESSWORK.<br><strong>MORE SIGNAL.</strong></div>
+<div class="si"><span>⌁</span><div><strong>Trend discovery</strong><small>See what is gaining traction</small></div></div>
+<div class="si"><span>◌</span><div><strong>Demand signals</strong><small>Understand shifting interest</small></div></div>
+<div class="si"><span>↗</span><div><strong>Opportunity mapping</strong><small>Find your next smart move</small></div></div></div></section></div>
+
+<div class="scn"><section class="sh"><div class="sec-h rv"><div><div class="ey">01 / MARKET INTELLIGENCE</div><h2>Understand what the market<br><span class="mh">is telling you.</span></h2></div><p>Signals are everywhere. Waave helps turn scattered indicators into a clearer view of where attention — and opportunity — may be moving.</p></div>
+<div class="il"><div class="art rv" aria-hidden="true"><div class="rg r1"></div><div class="rg r2"></div><div class="pf pbig"><div class="sc2" style="background:var(--lt)"><b>Signal map</b><div class="big">w.</div><div class="row"><span>Demand</span><b>+32%</b></div><div class="row"><span>Search</span><b>+24%</b></div><div class="row"><span>Momentum</span><b>+18%</b></div><div class="bars2"><i style="--h:35%"></i><i style="--h:55%"></i><i style="--h:45%"></i><i style="--h:80%"></i><i style="--h:65%"></i><i style="--h:100%"></i></div></div></div><span class="nd n1">↗ Demand</span><span class="nd n2">⌁ Search</span><span class="nd n3">◈ Products</span><span class="nd n4">◎ Momentum</span></div>
+<div class="g3" style="grid-template-columns:1fr">
+<article class="card rv"><span class="idx">A / 01</span><div class="ci blue">⌁</div><h3>Emerging demand</h3><p>Identify categories drawing more attention before the signal gets lost in the noise.</p><a class="lk" href="#insights" data-v="insights">Explore signals ↗</a></article>
+<article class="card rv" style="--d:.1s"><span class="idx">A / 02</span><div class="ci peach">◈</div><h3>Product momentum</h3><p>Compare illustrative growth signals to understand which products deserve a closer look.</p><a class="lk" href="#products" data-v="products">View products ↗</a></article>
+<article class="card rv" style="--d:.2s"><span class="idx">A / 03</span><div class="ci lilac">◎</div><h3>Opportunity context</h3><p>Bring key indicators together so your next move starts with better context.</p><a class="lk" href="#dashboard" data-v="dashboard">Open dashboard ↗</a></article></div></div></section></div>
+
+<div class="scn"><section class="sh"><div class="sec-h rv"><div><div class="ey">02 / TRENDING PRODUCTS</div><h2>Follow the signal.<br><span class="mh">Find the possibility.</span></h2></div><a class="btn" href="#products" data-v="products">Explore all demo trends ↗</a></div>
+<div class="g3 trend" id="tr"></div>
+<div class="dis rv">ⓘ All trend percentages on this preview are illustrative demo values, not verified or live market data.</div></section></div>
+
+<div class="scn"><section class="sh"><div class="dw"><div class="rv"><div class="ey">03 / YOUR SIGNAL CENTER</div><h2>From scattered data<br>to <span class="gt">a clearer direction.</span></h2><p style="margin:16px 0 24px">Bring momentum, category interest, and opportunity indicators into one practical workspace built to help you ask better questions.</p><a class="btn bp" href="#dashboard" data-v="dashboard">Explore the dashboard ↗</a>
+<ul><li>A single view of key signals</li><li>Visual trend comparisons</li><li>Clear demo data labeling</li></ul></div>
+<div class="win rv" style="--d:.15s"><div class="wt"><i></i><i></i><i></i>&nbsp;WAAVE / OVERVIEW<em>DEMO MODE</em></div><div class="wb">
+<div><small style="color:var(--mut)">MONDAY, OCTOBER 19</small><h3>Market overview</h3></div>
+<div class="mg"><div class="mm"><small>Market momentum</small><b>+18.6%</b><span>↗ 4.2%</span></div><div class="mm"><small>Product signals</small><b>1,284</b><span>↗ 12.8%</span></div><div class="mm"><small>Opportunity score</small><b>82 /100</b><span>↗ 6.1%</span></div></div>
+<svg class="ch" viewBox="0 0 520 135" preserveAspectRatio="none" aria-label="Illustrative market momentum chart"><path d="M0 110C30 102 43 111 65 86S94 101 120 78 145 85 170 62 206 77 230 56 260 70 288 39 320 52 345 43 375 55 402 24 442 34 460 16 493 28 520 5L520 135H0Z" fill="#DCEEFF"/><path class="dr" pathLength="1" d="M0 110C30 102 43 111 65 86S94 101 120 78 145 85 170 62 206 77 230 56 260 70 288 39 320 52 345 43 375 55 402 24 442 34 460 16 493 28 520 5" fill="none" stroke="#328FE6" stroke-width="3" stroke-linecap="round"/></svg>
+<div class="mg" style="grid-template-columns:1fr 1fr"><div class="mm"><small>Top category</small><b style="font-size:1rem">Smart accessories</b><span>↗ 32% demo growth</span></div><div class="mm"><small>Signal confidence</small><b style="font-size:1rem">High activity</b><span>Based on demo indicators</span></div></div></div></div></div></section></div>
+
+<div class="scn"><section class="sh"><div class="sec-h rv" style="justify-content:center;text-align:center"><div><div class="ey">04 / HOW IT WORKS</div><h2>A better signal.<br><span class="mh">A more considered move.</span></h2><p style="margin:16px auto 0">Move from scattered inputs to a structured view of opportunity — without making the process feel complicated.</p></div></div>
+<div class="wf" id="wf"></div></section></div>
+
+<div class="scn"><section class="sh"><div class="fin rv"><div class="ob"></div><div class="ob"></div><div class="ey">YOUR NEXT CHAPTER STARTS HERE</div><h2>Your next opportunity<br>starts with <span>better insights.</span></h2><p>Explore the signals. Ask better questions. See what might be next.</p><a class="btn bl" href="#dashboard" data-v="dashboard">Explore Waave AI ↗</a><div class="cb">BUILT FOR THE CURIOUS, THE STRATEGIC, THE FORWARD-LOOKING.</div></div></section></div>
+
+</div>
+
+<!-- PRODUCTS -->
+<div class="view" id="v-products"><div class="sh ph-h"><div class="ey"><span class="dot"></span>PRODUCT SIGNAL EXPLORER</div><h1>Follow the products<br><span class="gt">gaining momentum.</span></h1><p>Explore a sample catalog of emerging product themes, illustrative growth signals, and category context. Use it to see how a market intelligence workspace could help you prioritize what to investigate next.</p><div class="dis">ⓘ This is a prototype catalog. Percentages are illustrative demo values, not live market data.</div></div>
+<div class="sh"><div class="pn" data-pn><div class="tb"><div><h2>Product opportunity library</h2><p>6 sample products · demo dataset</p></div><input class="fi" type="search" placeholder="Search products or categories…" aria-label="Search products" data-f></div><div class="g3" id="pg"></div><div class="em" data-e hidden>No matching demo products. Try another search.</div></div>
+<div class="pcta"><div><h3>Want the bigger picture?</h3><p>Compare the sample signals in the dashboard view.</p></div><a class="btn bp" href="#dashboard" data-v="dashboard">Open dashboard ↗</a></div></div></div>
+
+<!-- INSIGHTS -->
+<div class="view" id="v-insights"><div class="sh ph-h"><div class="ey"><span class="dot"></span>MARKET SIGNALS &amp; CONTEXT</div><h1>Make sense of the<br><span class="gt">signals beneath the surface.</span></h1><p>Review a set of sample market observations that demonstrate how demand, search activity, and product momentum could be organized into a useful research starting point.</p><div class="dis">ⓘ Demo insights are fictional examples for interface preview only; validate any business decision with reliable sources.</div></div>
+<div class="sh"><div class="pn" data-pn><div class="tb"><div><h2>Signal briefing</h2><p>Illustrative observations · sample priority scores</p></div><span class="pl">UPDATED FOR DEMO</span></div><div id="il"></div><div class="tb" style="margin:24px 0 0"><span class="pl">SEARCH THE SAMPLE BRIEFING</span><input class="fi" type="search" placeholder="Search signals…" aria-label="Search insights" data-f></div><div class="em" data-e hidden>No matching signals.</div></div>
+<div class="pcta"><div><h3>Connect signals to a broader view</h3><p>Open the dashboard to compare illustrative momentum indicators.</p></div><a class="btn bp" href="#dashboard" data-v="dashboard">View analytics ↗</a></div></div></div>
+
+<!-- HOW -->
+<div class="view" id="v-how"><div class="sh ph-h"><div class="ey"><span class="dot"></span>A SIMPLE PATH FROM SIGNAL TO STRATEGY</div><h1>Better questions.<br><span class="gt">More considered decisions.</span></h1><p>Waave's experience is designed around a straightforward research flow: gather relevant signals, compare patterns, investigate opportunities, and use context to decide what to do next.</p></div>
+<div class="sh"><div class="g3" id="mg" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))"></div>
+<div class="pn" style="margin-top:24px"><div class="tb"><div><h2>What this prototype demonstrates</h2><p>Current scope and future direction</p></div><span class="pl">PHASE 1</span></div>
+<div class="ir rv"><div class="is">✓</div><div><h3>Connected multi-page experience</h3><p>Landing page, product catalog, insights briefing, analytics dashboard, and this workflow page share one visual system.</p></div></div>
+<div class="ir rv"><div class="is">✓</div><div><h3>Interactive demo interface</h3><p>Searchable product and insight lists, responsive navigation, and dashboard time-range controls work in the browser.</p></div></div>
+<div class="ir rv"><div class="is">↗</div><div><h3>Next: data and integration layer</h3><p>Replace demo values with verified sources, add persistence and validation, and define how opportunity scores should be calculated.</p></div></div></div>
+<div class="pcta"><div><h3>See the experience in action</h3><p>Explore the dashboard with sample indicators and charts.</p></div><a class="btn bp" href="#dashboard" data-v="dashboard">Open dashboard ↗</a></div></div></div>
+
+<!-- DASHBOARD -->
+<div class="view" id="v-dashboard"><div class="sh ph-h"><div class="ey"><span class="dot"></span>WAAVE / ANALYTICS WORKSPACE</div><h1>Your market,<br><span class="gt">in one clear view.</span></h1><p>Explore an interactive preview of the Waave AI analytics experience. Switch time ranges, compare sample indicators, and search the demo product table.</p><div class="dis">ⓘ All dashboard values and chart lines are illustrative demo data. No live market feed is connected.</div></div>
+<div class="sh"><div class="sg">
+<div class="card rv"><small>Market momentum</small><strong>+18.6%</strong><span>↗ 4.2% <small>demo change</small></span></div>
+<div class="card rv" style="--d:.08s"><small>Product signals</small><strong>1,284</strong><span>↗ 12.8% <small>demo change</small></span></div>
+<div class="card rv" style="--d:.16s"><small>Opportunity score</small><strong>82 /100</strong><span>↗ 6.1% <small>demo change</small></span></div>
+<div class="card rv" style="--d:.24s"><small>Signals analyzed</small><strong>24.8K</strong><span>↗ 9.4% <small>demo change</small></span></div></div>
+<div class="dl"><div class="pn rv"><div class="tb"><div><h2>Market momentum</h2><p>Illustrative market index · <span id="pl">Last 30 days</span></p></div><div class="rc" role="group" aria-label="Chart time range"><button data-r="7d" aria-pressed="false">7D</button><button data-r="30d" aria-pressed="true">30D</button><button data-r="90d" aria-pressed="false">90D</button></div></div>
+<svg class="ch" style="height:220px" viewBox="0 0 300 120" preserveAspectRatio="none" aria-label="Illustrative market momentum line chart"><path id="ar" fill="#DCEEFF" opacity=".7"/><path class="dr" id="ln" pathLength="1" fill="none" stroke="#328FE6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div class="pn rv" style="--d:.1s"><div class="tb"><div><h2>Category interest</h2><p>Relative sample score</p></div><span class="pl">DEMO</span></div><div class="bc" id="bc"></div></div></div>
+<div class="pn" data-pn><div class="tb"><div><h2>Top opportunity signals</h2><p>Search the fictional dataset by product or category.</p></div><input class="fi" type="search" placeholder="Filter products…" aria-label="Filter dashboard products" data-f></div>
+<div class="tw"><table><thead><tr><th>PRODUCT / CATEGORY</th><th>DEMO GROWTH</th><th>OPPORTUNITY SCORE</th><th>SIGNAL</th></tr></thead><tbody id="tb"></tbody></table></div><div class="em" data-e hidden>No matching rows found.</div></div></div></div>
+<!-- CONTACT -->
+<div class='view' id='v-contact'><div class='sh ph-h'><div class='ey'><span class='dot'></span>REGISTER INTEREST</div><h1>Tell us what you<br><span class='gt'>want to learn from the market.</span></h1><p>Waave AI is a prototype. Share your details and the questions you would bring to a market intelligence tool.</p><div class='dis'>ⓘ This form is not connected to a destination yet. Nothing is sent or stored until the site owner sets one.</div></div>
+<div class='sh'><div class='pn'><form class='fm' id='cf' novalidate><label>Name<input name='name' autocomplete='name' aria-describedby='e-name'><span class='er' id='e-name'></span></label><label>Email<input name='email' type='email' autocomplete='email' aria-describedby='e-email'><span class='er' id='e-email'></span></label><label>I am interested in<select name='interest'><option>Early access</option><option>Partnership</option><option>Feedback</option><option>Something else</option></select></label><label>Message<textarea name='msg' aria-describedby='e-msg'></textarea><span class='er' id='e-msg'></span></label><div class='acts'><button class='btn bp' type='submit'>Send message</button><button class='btn' type='button' id='cc' hidden>Copy message</button></div><div class='dis' id='cs' role='status' hidden></div></form></div><p style='margin-top:20px'>Customer stories will appear here once real pilots exist.</p></div></div>
+<!-- METHOD -->
+<div class='view' id='v-method'><div class='sh ph-h'><div class='ey'><span class='dot'></span>DATA SOURCES &amp; SCORING</div><h1>How a score<br><span class='gt'>should be earned.</span></h1><p>This page describes the proposed method for a production version. The values in this demo are illustrative and are not calculated from it.</p><div class='dis'>ⓘ Status: draft. No live data source is connected to Waave AI today.</div></div>
+<div class='sh'><div class='pn'><div class='tb'><div><h2>Data sources</h2><p>Categories to evaluate before launch</p></div><span class='pl'>PROPOSED</span></div><div class='tw'><table><thead><tr><th>SOURCE TYPE</th><th>WHAT IT WOULD ADD</th><th>REQUIRED FIELDS</th></tr></thead><tbody id='ms'></tbody></table></div></div>
+<div class='pn' style='margin-top:24px'><div class='tb'><div><h2>Opportunity score (draft)</h2><p>Each factor is scaled from 0 to 1, then weighted.</p></div><span class='pl'>DRAFT WEIGHTS</span></div><p dir='auto' style='font-weight:600;color:var(--ink);background:var(--bg);padding:16px;border-radius:12px;margin-bottom:12px'>Score = 100 × (0.30 × Momentum + 0.25 × Demand stability + 0.20 × Competition headroom + 0.15 × Margin potential + 0.10 × Evidence quality)</p><div id='mf'></div></div>
+<div class='pn' style='margin-top:24px'><div class='tb'><div><h2>Rules we would hold ourselves to</h2></div></div><div id='mr'></div></div></div></div>
+<!-- FAQ -->
+<div class='view' id='v-faq'><div class='sh ph-h'><div class='ey'><span class='dot'></span>FREQUENT QUESTIONS</div><h1>Questions,<br><span class='gt'>answered plainly.</span></h1></div><div class='sh'><div class='fq2' id='fqz'></div></div></div>
+<!-- PRIVACY -->
+<div class='view' id='v-privacy'><div class='sh ph-h'><div class='ey'><span class='dot'></span>PRIVACY</div><h1>Privacy,<br><span class='gt'>in plain terms.</span></h1><p>Draft notice for a prototype. Have a lawyer review it before the product launches.</p><div class='dis'>ⓘ Draft, not legal advice. Fields in [brackets] must be completed by the site owner.</div></div><div class='sh'><div class='pn' id='pv'></div></div></div>
+<!-- TERMS -->
+<div class='view' id='v-terms'><div class='sh ph-h'><div class='ey'><span class='dot'></span>TERMS</div><h1>Terms of use,<br><span class='gt'>kept simple.</span></h1><p>Draft terms for a prototype. Have a lawyer review them before launch.</p><div class='dis'>ⓘ Draft, not legal advice. Fields in [brackets] must be completed by the site owner.</div></div><div class='sh'><div class='pn' id='tm'></div></div></div>
+</main>
+
+<footer><div class="sh fr"><a class="brand" href="#home" data-v="home"><span class="bm"><i></i><i></i><i></i></span><span>waave<b>AI</b></span></a><span>Market intelligence for what comes next.</span><div class="fl"><a href="#products" data-v="products">Products</a><a href="#insights" data-v="insights">Insights</a><a href='#dashboard' data-v='dashboard'>Dashboard</a><a href='#method' data-v='method'>Methodology</a><a href='#faq' data-v='faq'>FAQ</a><a href='#contact' data-v='contact'>Contact</a><a href='#privacy' data-v='privacy'>Privacy</a><a href='#terms' data-v='terms'>Terms</a></div><small>© 2026 Waave AI · Demo experience</small></div></footer>
+
+<script>
+(function(){
+document.documentElement.classList.add('js');
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+var P=[["Wireless audio","SMART ACCESSORIES",32,82,"Compact listening products and accessories with a sample signal of rising interest.","blue","◉","Accelerating"],["Smart wearables","CONNECTED LIFESTYLE",24,76,"Connected devices designed around daily activity, health features, and convenience.","peach","◷","Rising"],["Portable projectors","HOME ENTERTAINMENT",18,71,"Small-format viewing devices for flexible home and on-the-go entertainment.","lilac","▣","Steady"],["Reusable drinkware","EVERYDAY ESSENTIALS",15,68,"Reusable bottles and cups positioned around portability and everyday utility.","mint","♧","Emerging"],["Ambient lighting","SMART HOME",13,64,"Flexible lighting products with decorative, workspace, and smart-home use cases.","sand","⌂","Watchlist"],["Portable work gear","WORK ON THE GO",11,61,"Compact productivity accessories for hybrid work and mobile setups.","sky","⌁","Exploratory"]];
+var I=[["↗","Wireless audio is gaining sample momentum","In this demo, smart accessory signals rise across several indicators. A real analysis would validate the trend against source coverage, seasonality, and competitive intensity.",82],["⌁","Interest is shifting toward compact everyday gear","A fictional cluster of search and category indicators suggests convenience as a theme worth investigating further.",76],["◈","Home entertainment products show a steady signal","The sample projector category represents a moderate-growth opportunity where price, distribution, and differentiation need closer review.",71],["◎","Reusable essentials may benefit from clearer positioning","A sample sustainability-related category illustrates how product intent and everyday utility can be explored together.",68]];
+var S=[["Collect signals","⌁","Bring product themes, demand indicators, and relevant market observations into one workspace. In a production version, each signal should include source and freshness details.","Bring relevant market indicators into a single place to start exploring."],["Read the patterns","◌","Compare movement over time, look for consistent changes, and distinguish short-lived spikes from patterns that deserve further research.","Compare momentum and emerging themes to see what deserves attention."],["Explore opportunities","◎","Review product categories alongside practical context such as competition, pricing, customer fit, and the quality of the evidence.","Use context and indicators to shortlist promising directions."],["Move with clarity","↗","Use the findings to shape your next question, prioritize research, and make a more informed decision rather than relying on a single score.","Make your next question — and your next decision — more informed."]];
+var pad=function(n){return '0'+(n+1)};
+var ph=function(p){var h=[40,55,48,70,62,85];return '<div class="pf" role="img" aria-label="App screen: '+p[0]+'"><div class="sc2 '+p[5]+'"><b>'+p[0]+'</b><div class="big">'+p[6]+'</div><div class="row"><span>Growth</span><b>+'+p[2]+'%</b></div><div class="bars2">'+h.map(function(v){return '<i style="--h:'+Math.round(v*p[2]/32+15)+'%"></i>'}).join('')+'</div><div class="mt2"><i style="--v:'+p[3]+'%"></i></div><div class="row"><span>Score</span><b>'+p[3]+'</b></div></div></div>'};
+$('#tr').innerHTML=P.slice(0,3).map(function(p,i){return '<article class="card rv" style="--d:'+i*.12+'s"><div class="tt"><span>DEMO TREND / 0'+(i+1)+'</span><span class="gr">↗ '+p[2]+'%</span></div>'+ph(p)+'<h3>'+p[0]+'</h3><p>'+p[1].charAt(0)+p[1].slice(1).toLowerCase()+' · Illustrative signal</p><div class="mtr" style="--v:'+p[3]+'%"><span></span></div></article>'}).join('');
+$('#wf').innerHTML=S.map(function(s,i){return '<article class="card stp rv" style="--d:'+i*.12+'s"><span class="sy">'+s[1]+'</span><span class="nm">'+pad(i)+'</span><h3>'+s[0]+'</h3><p>'+s[3]+'</p><div class="mtr" style="--v:100%"><span></span></div></article>'}).join('');
+$('#mg').innerHTML=S.map(function(s,i){return '<article class="card rv" style="--d:'+i*.1+'s"><span class="idx">STEP / '+pad(i)+'</span><div class="ci lilac">'+s[1]+'</div><h3>'+s[0]+'</h3><p>'+s[2]+'</p></article>'}).join('');
+$('#pg').innerHTML=P.map(function(p,i){return '<article class="card rv" data-r style="--d:'+(i%3)*.1+'s">'+ph(p)+'<div class="tt"><span>'+p[1]+'</span><span class="gr">↗ '+p[2]+'%</span></div><h3>'+p[0]+'</h3><p>'+p[4]+'</p><div class="tt" style="margin:14px 0 0"><span>Opportunity score · '+p[3]+'</span><a href="#insights" data-v="insights" style="color:#1D6FBF">View signal ↗</a></div></article>'}).join('');
+$('#il').innerHTML=I.map(function(x){return '<article class="ir rv" data-r><div class="is">'+x[0]+'</div><div><h3>'+x[1]+'</h3><p>'+x[2]+'</p></div><div class="sc"><strong>'+x[3]+'/100</strong><small>Sample priority</small></div></article>'}).join('');
+$('#tb').innerHTML=P.map(function(p){return '<tr data-r><td><strong>'+p[0]+'</strong></td><td class="up2">+'+p[2]+'%</td><td>'+p[3]+' / 100</td><td>'+p[7]+'</td></tr>'}).join('');
+var B=[["Audio",86],["Wearables",72],["Home AV",60],["Drinkware",49],["Lighting",41],["Work gear",35]];
+$('#bc').innerHTML=B.map(function(b,i){return '<div class="bg"><i style="--h:'+b[1]+'%;--d:'+i*.08+'s"></i><small>'+b[0]+'</small></div>'}).join('');
+/* chart ranges */
+var R={"7d":[[40,46,42,55,61,58,70],"Last 7 days"],"30d":[[88,80,83,65,70,51,61,41,50,29,39,20,25,5],"Last 30 days"],"90d":[[100,96,98,84,88,72,70,60,64,48,40,44,30,24,14],"Last 90 days"]};
+function draw(k){var v=R[k][0],n=v.length,mx=Math.max.apply(0,v),mn=Math.min.apply(0,v),pts=v.map(function(y,i){var yy=k==="7d"?110-(y-mn)/(mx-mn)*100:y*1.05+5;return (i*300/(n-1)).toFixed(1)+" "+yy.toFixed(1)});
+ var d="M"+pts.join("L");$('#ln').setAttribute('d',d);$('#ar').setAttribute('d',d+"L300 120L0 120Z");$('#pl').textContent=R[k][1];tr();
+ var l=$('#ln');l.classList.remove('in');void l.getBoundingClientRect();l.classList.add('in');}
+$$('.rc button').forEach(function(b){b.onclick=function(){$$('.rc button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});draw(b.dataset.r)}});
+/* filters */
+$$('[data-pn]').forEach(function(pn){var inp=$('[data-f]',pn),rows=$$('[data-r]',pn),em=$('[data-e]',pn);inp.addEventListener('input',function(){var q=inp.value.trim().toLowerCase(),c=0;rows.forEach(function(r){var m=!q||r.textContent.toLowerCase().indexOf(q)>-1;r.hidden=!m;if(m)c++});em.hidden=c>0})});
+/* reveal */
+var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var t=e.target;t.classList.add('in');setTimeout(function(){t.classList.add('rd')},1600);io.unobserve(t)}})},{threshold:.12}):null;
+function observe(v){$$('.rv,.dr,.bc,.mtr',v).forEach(function(e){e.classList.remove('in');e.classList.remove('rd');if(io)io.observe(e);else e.classList.add('in')});}
+/* i18n */
+var AR={"Overview":"نظرة عامة","Products":"المنتجات","Insights":"الرؤى","How it works":"كيف يعمل","Dashboard":"لوحة التحكم","Demand":"الطلب","Search":"البحث","Momentum":"الزخم","↗ Demand":"↗ الطلب","⌁ Search":"⌁ البحث","◈ Products":"◈ المنتجات","◎ Momentum":"◎ الزخم","Growth":"النمو","Score":"الدرجة","Demo":"تجريبي","to":"إلى","PHASE 1":"المرحلة 1","SIGNAL":"الإشارة","Audio":"الصوت","Wearables":"الأجهزة القابلة للارتداء","Home AV":"الصوت والصورة المنزلي","Drinkware":"أوعية الشرب","Lighting":"الإضاءة","Work gear":"معدات العمل","Smart home":"المنزل الذكي","Top category":"أعلى فئة","Last 7 days":"آخر 7 أيام","Last 30 days":"آخر 30 يومًا","Last 90 days":"آخر 90 يومًا","demo dataset":"مجموعة بيانات تجريبية","Accelerating":"متسارع","Rising":"صاعد","Steady":"مستقر","Emerging":"ناشئ","Watchlist":"قيد المراقبة","Exploratory":"استكشافي","View signal ↗":"عرض الإشارة ↗","Work on the go":"العمل أثناء التنقل","Smart accessories":"الإكسسوارات الذكية","Open dashboard":"افتح لوحة التحكم ↗","Market intelligence, reimagined":"ذكاء السوق بتصور جديد","Turn market signals into":"حوّل إشارات السوق إلى","smarter decisions.":"قرارات أذكى.","Spot emerging product trends":"اكتشف اتجاهات المنتجات الناشئة، وافهم تحولات الطلب، وابحث عن فرصتك القادمة — كل ذلك في رؤية واحدة واضحة.","Explore market insights":"استكشف رؤى السوق ↗","▶ View dashboard":"▶ عرض لوحة التحكم","Clarity behind the noise":"وضوح خلف الضجيج","One view. More confident":"رؤية واحدة. خطوات أكثر ثقة.","signals explored*":"إشارة تم استكشافها*","*Illustrative demo metrics":"*مقاييس تجريبية توضيحية وليست بيانات سوق حية.","Your market, decoded.":"سوقك، بوضوح.","Opportunity overview":"نظرة على الفرص","Market momentum":"زخم السوق","Demand accelerating":"الطلب يتسارع","Home essentials":"أساسيات المنزل","Search interest rising":"اهتمام البحث يرتفع","Opportunity score":"درجة الفرصة","Demand is shifting":"الطلب يتغير","Demo signal":"إشارة تجريبية","Illustrative signal":"إشارة توضيحية","Less guesswork.":"تخمين أقل.","More signal.":"إشارة أكثر.","Trend discovery":"اكتشاف الاتجاهات","See what is gaining":"شاهد ما يكتسب زخمًا","Demand signals":"إشارات الطلب","Understand shifting":"افهم تحوّل الاهتمام","Opportunity mapping":"خريطة الفرص","Find your next smart":"اعثر على خطوتك الذكية القادمة","01 / Market intelligence":"01 / ذكاء السوق","Understand what the market":"افهم ما يحدث","is telling you.":"في السوق من حولك.","Signals are everywhere":"الإشارات في كل مكان. يساعدك Waave على تحويل المؤشرات المتفرقة إلى صورة أوضح لما قد يتجه إليه الاهتمام — والفرص.","Signal map":"خريطة الإشارات","Emerging demand":"طلب ناشئ","Identify categories":"حدّد الفئات التي تجذب اهتمامًا متزايدًا قبل أن تضيع إشارتها في الضجيج.","Explore signals":"استكشف الإشارات ↗","Product momentum":"زخم المنتجات","Compare illustrative":"قارن إشارات النمو التوضيحية لتعرف أي المنتجات تستحق نظرة أقرب.","View products":"عرض المنتجات ↗","Opportunity context":"سياق الفرص","Bring key indicators":"اجمع المؤشرات الرئيسية لتبدأ خطوتك القادمة بسياق أفضل.","02 / Trending products":"02 / منتجات رائجة","Follow the signal.":"تتبّع الإشارة.","Find the possibility.":"اكتشف الإمكانية.","Explore all demo trends":"استكشف كل الاتجاهات التجريبية ↗","Wireless audio":"الصوتيات اللاسلكية","Smart wearables":"الأجهزة القابلة للارتداء الذكية","Portable projectors":"أجهزة العرض المحمولة","Reusable drinkware":"أوعية الشرب القابلة لإعادة الاستخدام","Ambient lighting":"الإضاءة المحيطة","Portable work gear":"معدات العمل المحمولة","Connected lifestyle":"أسلوب حياة متصل","Home entertainment":"الترفيه المنزلي","Everyday essentials":"أساسيات يومية","ⓘ All trend percentages":"ⓘ جميع نسب الاتجاهات في هذه المعاينة قيم تجريبية توضيحية، وليست بيانات سوق موثقة أو حية.","03 / Your signal center":"03 / مركز إشاراتك","From scattered data":"من بيانات متفرقة","a clearer direction.":"اتجاه أوضح.","Bring momentum, category":"اجمع الزخم واهتمام الفئات ومؤشرات الفرص في مساحة عمل عملية تساعدك على طرح أسئلة أفضل.","Explore the dashboard":"استكشف لوحة التحكم ↗","A single view of key":"رؤية واحدة للإشارات الرئيسية","Visual trend comparisons":"مقارنات بصرية للاتجاهات","Clear demo data labeling":"وسم واضح للبيانات التجريبية","Waave / Overview":"WAAVE / نظرة عامة","Demo mode":"وضع تجريبي","Monday, October 19":"الاثنين، 19 أكتوبر","Market overview":"نظرة على السوق","Product signals":"إشارات المنتجات","↗ 32% demo growth":"↗ نمو تجريبي 32%","Signal confidence":"ثقة الإشارة","High activity":"نشاط مرتفع","Based on demo indicators":"بناءً على مؤشرات تجريبية","04 / How it works":"04 / كيف يعمل","A better signal.":"إشارة أفضل.","A more considered move.":"خطوة أكثر تروّيًا.","Move from scattered":"انتقل من مدخلات متفرقة إلى رؤية منظمة للفرص — دون أن تبدو العملية معقدة.","Collect signals":"اجمع الإشارات","Read the patterns":"اقرأ الأنماط","Explore opportunities":"استكشف الفرص","Move with clarity":"تحرّك بوضوح","Bring relevant market":"اجمع مؤشرات السوق ذات الصلة في مكان واحد لتبدأ الاستكشاف.","Compare momentum and":"قارن الزخم والموضوعات الناشئة لترى ما يستحق الانتباه.","Use context and indic":"استخدم السياق والمؤشرات لاختيار الاتجاهات الواعدة.","Make your next question":"اجعل سؤالك التالي — وقرارك التالي — أكثر استنارة.","Bring product themes":"اجمع موضوعات المنتجات ومؤشرات الطلب وملاحظات السوق في مساحة واحدة. في النسخة الإنتاجية يجب أن تتضمن كل إشارة مصدرها وحداثتها.","Compare movement over":"قارن الحركة عبر الزمن، وابحث عن التغيرات المتسقة، وميّز الارتفاعات العابرة عن الأنماط التي تستحق بحثًا أعمق.","Review product categor":"راجع فئات المنتجات مع سياق عملي كالمنافسة والتسعير وملاءمة العملاء وجودة الأدلة.","Use the findings to":"استخدم النتائج لتشكيل سؤالك التالي وترتيب أولويات البحث واتخاذ قرار أكثر استنارة بدل الاعتماد على درجة واحدة.","Your next chapter":"فصلك القادم يبدأ هنا","Your next opportunity":"فرصتك القادمة","starts with":"تبدأ من","better insights.":"رؤى أفضل.","Explore the signals.":"استكشف الإشارات. اطرح أسئلة أفضل. اكتشف ما قد يأتي بعد.","Explore Waave AI":"استكشف Waave AI ↗","Built for the curious":"صُمم للفضوليين والاستراتيجيين وأصحاب النظرة المستقبلية.","Product signal explorer":"مستكشف إشارات المنتجات","Follow the products":"تابع المنتجات","gaining momentum.":"التي تكتسب زخمًا.","Explore a sample catalog":"استكشف كتالوجًا تجريبيًا لموضوعات المنتجات الناشئة وإشارات النمو التوضيحية وسياق الفئات، لترى كيف تساعدك مساحة ذكاء السوق على ترتيب أولويات بحثك.","ⓘ This is a prototype":"ⓘ هذا كتالوج أولي. النسب قيم تجريبية توضيحية وليست بيانات سوق حية.","Product opportunity library":"مكتبة فرص المنتجات","6 sample products":"6 منتجات تجريبية","No matching demo prod":"لا توجد منتجات مطابقة. جرّب بحثًا آخر.","Want the bigger picture?":"تريد الصورة الأكبر؟","Compare the sample signals":"قارن الإشارات التجريبية في لوحة التحكم.","Compact listening pro":"منتجات وملحقات استماع مدمجة بإشارة تجريبية لاهتمام متصاعد.","Connected devices des":"أجهزة متصلة مصممة حول النشاط اليومي وميزات الصحة والراحة.","Small-format viewing":"أجهزة عرض صغيرة للترفيه المرن في المنزل وخارجه.","Reusable bottles and":"زجاجات وأكواب قابلة لإعادة الاستخدام تركّز على سهولة الحمل والاستخدام اليومي.","Flexible lighting pro":"منتجات إضاءة مرنة لحالات الديكور ومساحات العمل والمنزل الذكي.","Compact productivity":"ملحقات إنتاجية مدمجة للعمل الهجين والمكاتب المتنقلة.","Market signals & context":"إشارات السوق والسياق","Make sense of the":"أعطِ معنًى","signals beneath the surface.":"للإشارات الكامنة تحت السطح.","Review a set of sample":"راجع مجموعة من ملاحظات السوق التجريبية التي توضح كيف يمكن تنظيم الطلب ونشاط البحث وزخم المنتجات كنقطة انطلاق للبحث.","ⓘ Demo insights are fic":"ⓘ الرؤى التجريبية أمثلة خيالية لمعاينة الواجهة فقط؛ تحقق من أي قرار تجاري عبر مصادر موثوقة.","Signal briefing":"موجز الإشارات","Illustrative observations":"ملاحظات توضيحية","sample priority scores":"درجات أولوية تجريبية","Updated for demo":"محدّث للعرض التجريبي","Wireless audio is gaining":"الصوتيات اللاسلكية تكتسب زخمًا تجريبيًا","In this demo, smart":"في هذا العرض ترتفع إشارات الإكسسوارات الذكية عبر عدة مؤشرات. التحليل الحقيقي يتحقق من الاتجاه مقابل تغطية المصادر والموسمية وحدة المنافسة.","Interest is shifting":"الاهتمام يتجه نحو المعدات اليومية المدمجة","A fictional cluster":"مجموعة خيالية من مؤشرات البحث والفئات تشير إلى أن الراحة موضوع يستحق مزيدًا من البحث.","Home entertainment products":"منتجات الترفيه المنزلي تُظهر إشارة مستقرة","The sample projector":"تمثل فئة أجهزة العرض التجريبية فرصة نمو معتدلة تحتاج إلى مراجعة أدق للسعر والتوزيع والتميّز.","Reusable essentials may":"قد تستفيد الأساسيات القابلة لإعادة الاستخدام من تموضع أوضح","A sample sustainability":"فئة تجريبية متعلقة بالاستدامة توضح كيف يمكن استكشاف نية المنتج وفائدته اليومية معًا.","Sample priority":"أولوية تجريبية","Search the sample briefing":"ابحث في الموجز التجريبي","No matching signals.":"لا توجد إشارات مطابقة.","Connect signals to a b":"اربط الإشارات برؤية أوسع","Open the dashboard to":"افتح لوحة التحكم لمقارنة مؤشرات الزخم التوضيحية.","View analytics":"عرض التحليلات ↗","A simple path from":"مسار بسيط من الإشارة إلى الاستراتيجية","Better questions.":"أسئلة أفضل.","More considered decisions.":"قرارات أكثر تروّيًا.","Waave's experience is":"صُممت تجربة Waave حول مسار بحث مباشر: اجمع الإشارات المناسبة، وقارن الأنماط، واستقصِ الفرص، واستخدم السياق لتقرر خطوتك التالية.","What this prototype demonstrates":"ما يوضحه هذا النموذج","Current scope and future":"النطاق الحالي والاتجاه المستقبلي","Connected multi-page":"تجربة متعددة الصفحات ومترابطة","Landing page, product":"الصفحة الرئيسية وكتالوج المنتجات وموجز الرؤى ولوحة التحليلات وصفحة سير العمل تشترك في نظام بصري واحد.","Interactive demo interface":"واجهة عرض تفاعلية","Searchable product and":"قوائم المنتجات والرؤى قابلة للبحث، والتنقل متجاوب، وعناصر نطاق الزمن في اللوحة تعمل في المتصفح.","Next: data and integr":"التالي: طبقة البيانات والتكامل","Replace demo values":"استبدل القيم التجريبية بمصادر موثقة، وأضف الحفظ والتحقق، وحدد كيف تُحسب درجات الفرص.","See the experience in":"شاهد التجربة عمليًا","Explore the dashboard with":"استكشف لوحة التحكم بمؤشرات ومخططات تجريبية.","Waave / Analytics workspace":"WAAVE / مساحة التحليلات","Your market,":"سوقك،","in one clear view.":"في رؤية واحدة واضحة.","Explore an interactive":"استكشف معاينة تفاعلية لتجربة تحليلات Waave AI. بدّل النطاقات الزمنية، وقارن المؤشرات التجريبية، وابحث في جدول المنتجات التجريبي.","ⓘ All dashboard values":"ⓘ جميع قيم اللوحة وخطوط المخططات بيانات تجريبية توضيحية. لا يوجد اتصال بخلاصة سوق حية.","demo change":"تغيّر تجريبي","Signals analyzed":"إشارات تم تحليلها","Illustrative market index":"مؤشر سوق توضيحي","Category interest":"اهتمام الفئات","Relative sample score":"درجة نسبية تجريبية","Top opportunity signals":"أبرز إشارات الفرص","Search the fictional da":"ابحث في مجموعة البيانات الخيالية بالمنتج أو الفئة.","Product / Category":"المنتج / الفئة","Demo growth":"النمو التجريبي","No matching rows found.":"لا توجد صفوف مطابقة.","Market intelligence for":"ذكاء السوق لما هو قادم.","© 2026 Waave AI":"© 2026 Waave AI","Demo experience":"تجربة تجريبية"};
+var PH={"Search products or categories…":"ابحث عن منتجات أو فئات…","Search signals…":"ابحث في الإشارات…","Filter products…":"تصفية المنتجات…"};
+var AR2={"Methodology": "المنهجية", "FAQ": "الأسئلة الشائعة", "Contact": "تواصل معنا", "Privacy": "الخصوصية", "Terms": "الشروط", "Register interest": "سجّل اهتمامك", "Tell us what you": "أخبرنا ماذا تريد", "want to learn from the market.": "أن تعرف من السوق.", "Waave AI is a prototype. Share": "Waave AI نموذج أولي. شاركنا بياناتك والأسئلة التي ستطرحها على أداة ذكاء السوق.", "ⓘ This form is not": "ⓘ هذا النموذج غير مرتبط بوجهة استقبال بعد. لن يُرسل أو يُحفظ شيء حتى يحدد مالك الموقع وجهة.", "Name": "الاسم", "Email": "البريد الإلكتروني", "I am interested in": "أنا مهتم بـ", "Early access": "وصول مبكر", "Partnership": "شراكة", "Feedback": "ملاحظات", "Something else": "شيء آخر", "Message": "الرسالة", "Send message": "إرسال الرسالة", "Copy message": "نسخ الرسالة", "Enter your name.": "أدخل اسمك.", "Enter a valid email address.": "أدخل بريدًا إلكترونيًا صحيحًا.", "Write a short message.": "اكتب رسالة قصيرة.", "Message sent.": "تم إرسال الرسالة.", "Could not send. Try again later.": "تعذّر الإرسال. حاول لاحقًا.", "This form has no destination": "لا توجد وجهة لهذا النموذج بعد، لذا لم يُرسل شيء. انسخ رسالتك وأرسلها بطريقة أخرى.", "Copy failed. Select the text": "فشل النسخ. حدّد النص في حقل الرسالة بدلًا من ذلك.", "Customer stories will": "ستظهر قصص العملاء هنا عندما توجد تجارب حقيقية.", "Data sources & scoring": "مصادر البيانات والتقييم", "How a score": "كيف تُكتسب", "should be earned.": "الدرجة.", "This page describes": "تصف هذه الصفحة المنهجية المقترحة للنسخة الإنتاجية. القيم في هذا العرض توضيحية ولم تُحسب بها.", "ⓘ Status: draft. No": "ⓘ الحالة: مسودة. لا يوجد مصدر بيانات حي متصل بـ Waave AI اليوم.", "Data sources": "مصادر البيانات", "Categories to evaluate before launch": "فئات للتقييم قبل الإطلاق", "PROPOSED": "مقترح", "SOURCE TYPE": "نوع المصدر", "WHAT IT WOULD ADD": "ما الذي يضيفه", "REQUIRED FIELDS": "الحقول المطلوبة", "Search interest": "اهتمام البحث", "Early signs of demand": "مؤشرات مبكرة على الطلب", "Query, region, date range, refresh time": "الاستعلام والمنطقة والفترة ووقت التحديث", "Marketplace listings": "قوائم الأسواق", "Price range and competition": "نطاق السعر والمنافسة", "Listing count, price, seller count, capture date": "عدد القوائم والسعر وعدد البائعين وتاريخ الجمع", "Sales estimates": "تقديرات المبيعات", "Volume trends": "اتجاهات الحجم", "Provider, method, coverage, confidence": "المزوّد والطريقة والتغطية ودرجة الثقة", "News and mentions": "الأخبار والإشارات", "Context for spikes": "سياق الارتفاعات المفاجئة", "Publisher, date, link": "الناشر والتاريخ والرابط", "Opportunity score (draft)": "درجة الفرصة (مسودة)", "Each factor is scaled": "يُقاس كل عامل من 0 إلى 1 ثم يُوزن.", "DRAFT WEIGHTS": "أوزان مسودة", "Score = 100 × (0.30": "الدرجة = 100 × (0.30 × الزخم + 0.25 × استقرار الطلب + 0.20 × مساحة المنافسة + 0.15 × إمكانات الهامش + 0.10 × جودة الأدلة)", "Demand stability": "استقرار الطلب", "Competition headroom": "مساحة المنافسة", "Margin potential": "إمكانات الهامش", "Evidence quality": "جودة الأدلة", "Direction and consistency": "اتجاه النمو وثباته خلال الفترة المختارة.", "Whether interest persists": "هل يستمر الاهتمام أم هو ارتفاع قصير.", "How crowded the": "مدى ازدحام الفئة.", "Gap between typical": "الفجوة بين السعر المعتاد والتكلفة المتوقعة.", "Number, freshness and": "عدد المصادر وحداثتها واتفاقها.", "Rules we would hold ourselves to": "قواعد نلتزم بها", "Every signal shows": "تعرض كل إشارة مصدرها ووقت جمعها.", "Scores with too little": "الدرجات ذات الأدلة القليلة تُوسم بثقة منخفضة ولا تُرتَّب.", "A score informs": "الدرجة توجّه السؤال التالي ولا تحل محل الحكم.", "FREQUENT QUESTIONS": "أسئلة متكررة", "Questions,": "الأسئلة،", "answered plainly.": "بإجابات مباشرة.", "What is Waave AI?": "ما هو Waave AI؟", "A prototype of a market": "نموذج أولي لمساحة عمل لذكاء السوق ترصد اتجاهات المنتجات. هو عرض تجريبي وليس منتجًا مُطلقًا.", "Is the data real?": "هل البيانات حقيقية؟", "No. Every number": "لا. كل رقم ومخطط ودرجة هنا توضيحي. لا يوجد اتصال بخلاصة سوق حية.", "Where will the data come from?": "من أين ستأتي البيانات؟", "That has not been decided": "لم يُحسم ذلك بعد. تسرد صفحة المنهجية أنواع المصادر التي سنقيّمها.", "How is the opportunity score calculated?": "كيف تُحسب درجة الفرصة؟", "The demo scores are": "درجات العرض قيم تجريبية ثابتة. تجد صيغة مسودة للنسخة الإنتاجية في صفحة المنهجية.", "Can I get access?": "هل يمكنني الحصول على وصول؟", "There is no product": "لا يوجد منتج للتسجيل فيه بعد. يمكنك تسجيل اهتمامك في صفحة التواصل.", "What does this site store about me?": "ماذا يخزّن هذا الموقع عني؟", "Only your language choice": "اختيارك للغة فقط، ويُحفظ في متصفحك. راجع صفحة الخصوصية للتفاصيل.", "Privacy,": "الخصوصية،", "in plain terms.": "بعبارات واضحة.", "Draft notice for a": "مسودة إشعار لنموذج أولي. اطلب مراجعة محامٍ قبل إطلاق المنتج.", "ⓘ Draft, not legal": "ⓘ مسودة وليست استشارة قانونية. على مالك الموقع استكمال الحقول بين الأقواس [ ].", "Who is responsible": "من المسؤول", "[Company legal name": "[الاسم القانوني للشركة وبيانات التواصل يضيفها مالك الموقع.]", "What this site stores": "ما الذي يخزّنه هذا الموقع", "Your language choice is saved": "يُحفظ اختيارك للغة في التخزين المحلي لمتصفحك ليفتح الموقع بلغتك. لا يُرسل إلينا.", "What loads from third parties": "ما يُحمَّل من أطراف ثالثة", "Fonts are loaded from Google": "تُحمَّل الخطوط من Google Fonts، وقد تتلقى عنوان IP وتفاصيل المتصفح عند تحميل الصفحة.", "The contact form": "نموذج التواصل", "The form is not connected": "النموذج غير مرتبط بوجهة بعد. عند ربطه يجب أن يوضح هذا الإشعار ما يُجمع ولماذا ومدة الاحتفاظ وكيفية طلب الحذف.", "Analytics and cookies": "التحليلات وملفات الارتباط", "This prototype does not add": "هذا النموذج لا يضيف تحليلات أو ملفات ارتباط. إن أضفتها فحدّث هذا الإشعار واطلب الموافقة حيث يشترط القانون.", "Terms of use,": "شروط الاستخدام،", "kept simple.": "ببساطة.", "Draft terms for a": "مسودة شروط لنموذج أولي. اطلب مراجعة محامٍ قبل الإطلاق.", "Demo only": "عرض تجريبي فقط", "Waave AI is a prototype for": "Waave AI نموذج أولي لمعاينة الواجهة وليس خدمة مُطلقة.", "Illustrative data": "بيانات توضيحية", "All figures, trends and scores": "جميع الأرقام والاتجاهات والدرجات عينات خيالية. لا تبنِ قرارات تجارية أو استثمارية أو شرائية عليها.", "No warranty": "بلا ضمان", "The site is provided as is": "يُقدَّم الموقع كما هو دون وعود بالدقة أو التوفر أو الملاءمة لغرض معين.", "Intellectual property": "الملكية الفكرية", "[Owner to specify who owns": "[يحدد المالك من يملك التصميم والنص والشيفرة وأي ترخيص ينطبق.]", "Changes": "التغييرات", "These terms may change": "قد تتغير هذه الشروط مع تطور المنتج. [يحدد المالك كيفية الإعلان عن التغييرات.]", "Governing law": "القانون الحاكم", "[Owner to specify the governing": "[يحدد المالك القانون الحاكم والاختصاص القضائي.]"};Object.assign(AR,AR2);var K=Object.keys(AR).map(function(k){return [k.toLowerCase(),AR[k]]}).sort(function(a,b){return b[0].length-a[0].length});
+var og=new WeakMap(),lang='en';
+function tx(s){return s.split(' · ').map(function(p){var l=p.trim().toLowerCase();if(!l)return p;for(var i=0;i<K.length;i++){var k=K[i][0];if(l===k||(k.length>=14&&l.indexOf(k)===0))return K[i][1]}return p.replace(/^DEMO TREND/,'اتجاه تجريبي').replace(/^STEP/,'الخطوة')}).join(' · ')}
+function tr(){var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),n,pn;while((n=w.nextNode())){pn=n.parentNode.nodeName;if(pn==='SCRIPT'||pn==='STYLE')continue;if(!og.has(n)){if(!n.nodeValue.trim())continue;og.set(n,n.nodeValue)}var o=og.get(n),m=o.match(/^(\s*)([\s\S]*?)(\s*)$/);n.nodeValue=lang==='ar'?m[1]+tx(m[2])+m[3]:o}
+ $$('[placeholder]').forEach(function(e){if(!e.dataset.en)e.dataset.en=e.placeholder;e.placeholder=lang==='ar'&&PH[e.dataset.en]?PH[e.dataset.en]:e.dataset.en})}
+function setL(l){lang=l;var h=document.documentElement;h.lang=l;h.dir=l==='ar'?'rtl':'ltr';tr();$$('[data-lg]').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lg===l)});try{localStorage.setItem('wl',l)}catch(e){}}
+$$('[data-lg]').forEach(function(b){b.onclick=function(){setL(b.dataset.lg)}});
+/* new pages */
+var Rw=function(id,a){$('#'+id).innerHTML=a.map(function(x,i){return `<article class='ir rv' style='--d:${i*.06}s'><div class='is'>${x[3]||'✓'}</div><div><h3>${x[0]}</h3>${x[1]?`<p>${x[1]}</p>`:''}</div>${x[2]?`<div class='sc'><strong dir='ltr'>${x[2]}</strong></div>`:''}</article>`}).join('')};
+$('#ms').innerHTML=[['Search interest','Early signs of demand','Query, region, date range, refresh time'],['Marketplace listings','Price range and competition','Listing count, price, seller count, capture date'],['Sales estimates','Volume trends','Provider, method, coverage, confidence'],['News and mentions','Context for spikes','Publisher, date, link']].map(function(r){return '<tr>'+r.map(function(c){return '<td>'+c+'</td>'}).join('')+'</tr>'}).join('');
+Rw('mf',[['Momentum','Direction and consistency of growth over the chosen period.','30%','⌁'],['Demand stability','Whether interest persists or is a short spike.','25%','◌'],['Competition headroom','How crowded the category appears.','20%','◈'],['Margin potential','Gap between typical price and expected cost.','15%','◎'],['Evidence quality','Number, freshness and agreement of sources.','10%','✓']]);
+Rw('mr',[['Every signal shows its source and when it was collected.'],['Scores with too little evidence are labelled low confidence, not ranked.'],['A score informs the next question. It does not replace judgement.']]);
+Rw('pv',[['Who is responsible','[Company legal name and contact details to be added by the site owner.]'],['What this site stores','Your language choice is saved in your browser local storage so the site opens in the language you picked. It is not sent to us.'],['What loads from third parties','Fonts are loaded from Google Fonts, which can receive your IP address and browser details when the page loads.'],['The contact form','The form is not connected to a destination yet. When it is, this notice must describe what is collected, why, how long it is kept and how to ask for deletion.'],['Analytics and cookies','This prototype does not add analytics or cookies. If you add them, update this notice and ask for consent where the law requires it.']]);
+Rw('tm',[['Demo only','Waave AI is a prototype for interface preview. It is not a released service.'],['Illustrative data','All figures, trends and scores are fictional samples. Do not base business, investment or purchasing decisions on them.'],['No warranty','The site is provided as is, without promises about accuracy, availability or fitness for a purpose.'],['Intellectual property','[Owner to specify who owns the design, text and code, and any licence that applies.]'],['Changes','These terms may change as the product develops. [Owner to specify how changes are announced.]'],['Governing law','[Owner to specify the governing law and jurisdiction.]']]);
+$('#fqz').innerHTML=[['What is Waave AI?','A prototype of a market intelligence workspace for spotting product trends. It is a demo, not a released product.'],['Is the data real?','No. Every number, chart and score here is illustrative. No live market feed is connected.'],['Where will the data come from?','That has not been decided. The Methodology page lists the source types we would evaluate.'],['How is the opportunity score calculated?','The demo scores are fixed sample values. A draft formula for a production version is on the Methodology page.'],['Can I get access?','There is no product to sign up for yet. You can register your interest on the Contact page.'],['What does this site store about me?','Only your language choice, saved in your browser. See the Privacy page for details.']].map(function(q){return `<details class='card rv'><summary>${q[0]}</summary><p>${q[1]}</p></details>`}).join('');
+/* contact form */
+var CONTACT_ENDPOINT=''; /* set to your form service URL */
+var cf=$('#cf');
+cf.addEventListener('submit',function(e){e.preventDefault();var ok=true,d={},nl=String.fromCharCode(10);
+[['name','Enter your name.'],['email','Enter a valid email address.'],['msg','Write a short message.']].forEach(function(f){var el=cf.elements[f[0]],v=el.value.trim(),at=v.indexOf('@'),bad=!v||(f[0]==='email'&&!(at>0&&v.indexOf('.',at)>at+1&&v.indexOf(' ')<0));$('#e-'+f[0]).textContent=bad?(lang==='ar'?tx(f[1]):f[1]):'';el.setAttribute('aria-invalid',bad);if(bad&&ok){el.focus();ok=false}d[f[0]]=v});
+if(!ok)return;d.interest=cf.elements.interest.value;
+var cs=$('#cs'),cc=$('#cc');cs.hidden=false;
+function say(m){cs.textContent=lang==='ar'?tx(m):m}
+if(CONTACT_ENDPOINT){fetch(CONTACT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;say('Message sent.');cf.reset()}).catch(function(){say('Could not send. Try again later.')})}
+else{say('This form has no destination yet, so nothing was sent. Copy your message and send it another way.');cc.hidden=false;cc.onclick=function(){var t=['Name: '+d.name,'Email: '+d.email,'Interest: '+d.interest,'',d.msg].join(nl);(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){cc.textContent=lang==='ar'?'تم النسخ':'Copied'},function(){say('Copy failed. Select the text in the message field instead.')})}}});
+/* motion */
+$$('.g3,.wf,.sg').forEach(function(g){[].forEach.call(g.children,function(c,i){if(c.classList.contains('rv')&&!c.style.getPropertyValue('--d'))c.style.setProperty('--d',(i*.09).toFixed(2)+'s')})});
+(function(){var v=$('.vis'),tk=0;if(!v||matchMedia('(prefers-reduced-motion:reduce)').matches)return;addEventListener('scroll',function(){if(tk)return;tk=requestAnimationFrame(function(){tk=0;v.style.setProperty('--py',(-Math.min(scrollY,700)*.18).toFixed(1));document.documentElement.style.setProperty('--sp',Math.min(scrollY,1400))})},{passive:true})})();
+/* inner pages: page header + panels join the same staggered reveal system */
+$$('.view:not(#v-home) .ph-h').forEach(function(h){[].forEach.call(h.children,function(c,i){c.classList.add('rv');c.style.setProperty('--d',(i*.08).toFixed(2)+'s')})});
+$$('.view:not(#v-home) .pn,.view:not(#v-home) .pcta').forEach(function(e){e.classList.add('rv')});
+/* routing */
+var V=['home','products','insights','how','dashboard','method','faq','contact','privacy','terms'];
+function show(v,push){if(V.indexOf(v)<0)v='home';$$('.view').forEach(function(x){x.classList.toggle('on',x.id==='v-'+v)});
+ $$('nav a').forEach(function(a){a.classList.toggle('on',a.dataset.v===v)});
+ var el=$('#v-'+v);observe(el);if(v==='dashboard')draw($('.rc [aria-pressed=true]').dataset.r);
+ if(push!==false){try{history.replaceState(null,'','#'+v)}catch(e){location.hash=v}}
+ window.scrollTo(0,0);nav.classList.remove('open');mt.setAttribute('aria-expanded','false');
+ document.title=(v==='home'?'':v.charAt(0).toUpperCase()+v.slice(1)+' — ')+'Waave AI'}
+var nav=$('#nav'),mt=$('#mt');
+document.addEventListener('click',function(e){var a=e.target.closest('[data-v]');if(a){e.preventDefault();show(a.dataset.v)}});
+mt.onclick=function(){var o=nav.classList.toggle('open');mt.setAttribute('aria-expanded',o)};
+window.addEventListener('hashchange',function(){show(location.hash.slice(1),false)});
+var sl=null;try{sl=localStorage.getItem('wl')}catch(e){}if(sl==='ar')setL('ar');
+show(location.hash.slice(1)||'home',false);
+})();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* Curtain stacking: each incoming .scn rises over the pinned outgoing one.
+   One scrubbed timeline + one ScrollTrigger per transition. pinSpacing:false keeps the document
+   height identical to the natural flow, so the incoming scene's own upward travel IS the curtain:
+   it starts one viewport below A and reaches the top exactly when the scrub timeline ends.
+   scrub:true (no smoothing) so every layer stays locked to that moving edge. */
+(function(){
+if(!window.gsap||!window.ScrollTrigger)return;
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({ignoreMobileResize:true});
+var $=function(s,r){return(r||document).querySelector(s)},$$=function(s,r){return[].slice.call((r||document).querySelectorAll(s))};
+var home=$('#v-home'),root=document.documentElement,mm=null,ro=null,rt=0;
+if(!home)return;
+
+var WRAP='.dw,.il,.g3,.wf,.fin';
+function expand(el){return el.matches(WRAP)?$$(':scope > *',el).filter(function(c){return!c.classList.contains('ob')}):[el]}
+function layers(scene){var o=[];$$(':scope > .sh',scene).forEach(function(s){$$(':scope > *',s).forEach(function(k){o=o.concat(expand(k))})});return o}
+
+function killStale(){ScrollTrigger.getAll().forEach(function(t){if(/^curtain-/.test(t.vars.id||''))t.kill()});$$('.pin-spacer',home).forEach(function(s){if(!$('.scn',s))s.remove()})}
+
+function refreshSoon(){clearTimeout(rt);rt=setTimeout(function(){requestAnimationFrame(function(){ScrollTrigger.refresh()})},120)}
+
+/* ===== Motion system: shared tokens (mirror the CSS --ease/--d1..--d3/--st) ===== */
+var T={s:.5,m:.85,l:1.2,e:'expo.out',st:.08};
+function count(e,tl,at,list){
+  var n=[].slice.call(e.childNodes).filter(function(c){return c.nodeType===3&&/\d/.test(c.nodeValue)})[0];if(!n)return;
+  var m=n.nodeValue.match(/^(\D*?)(\d[\d,]*(?:\.\d+)?)(.*)$/);if(!m)return;
+  var tgt=parseFloat(m[2].replace(/,/g,'')),dec=(m[2].split('.')[1]||'').length,com=m[2].indexOf(',')>-1,o={v:0},orig=n.nodeValue;
+  var fn=function(){var x=(o.v*tgt).toFixed(dec);if(com)x=Number(x).toLocaleString('en-US',{minimumFractionDigits:dec,maximumFractionDigits:dec});n.nodeValue=m[1]+x+m[3]};
+  list.push([n,orig]);
+  tl.to(o,{v:1,duration:1.4,ease:'power2.out',immediateRender:false,onStart:fn,onUpdate:fn,onComplete:function(){n.nodeValue=orig}},at);
+}
+/* One-shot, time-based entrance per scene. Targets exclude .gl layers, .ph and .pbig: the curtain scrubs their
+   transform/opacity, so only their descendants are animated here (transforms compose, nothing is fought over). */
+function sceneMotion(sc,narrow,reg,counts){
+  var rtl=root.dir==='rtl',k=narrow?.6:1,ox=rtl?'100% 50%':'0% 50%',all=[];
+  var skip=function(e){return e.classList.contains('gl')||e.classList.contains('ph')||e.classList.contains('pbig')};
+  var q=function(s){return $$(s,sc).filter(function(e){return!skip(e)})};
+  var tl=gsap.timeline({paused:true});
+  function add(sel,f,at,x){
+    var els=q(sel);if(!els.length)return;x=x||{};all=all.concat(els);
+    var t={ease:T.e,duration:x.d||T.m,stagger:x.st==null?T.st:x.st,clearProps:'transform,opacity,filter'};
+    for(var p in f)t[p]=p==='filter'?'blur(0px)':p==='transformOrigin'?f[p]:(p==='opacity'||/^scale/.test(p))?1:0;
+    tl.fromTo(els,f,t,at);
+  }
+  add('.ey',{opacity:0,x:rtl?14:-14},0);
+  add('h1,h2',{opacity:0,y:26*k,filter:narrow?'blur(0px)':'blur(8px)'},.06,{d:T.l});
+  /* Catch content-bearing reveal elements omitted by the more specific selectors below.
+     Never animate a curtain-owned layer itself; only its descendants receive these tweens. */
+  add('.rv:not(.gl):not(.ph):not(.pbig)',{opacity:0,y:18*k},.12,{d:T.m,st:.06});
+  add('.hero p.l,.sec-h p,.dw p,.fin p',{opacity:0,y:18*k},.2);
+  add('.acts .btn,.dw .btn,.sec-h .btn,.fin .btn',{opacity:0,y:14*k,scale:.92},.32,{st:.1});
+  add('.dw li,.proof>*,.si,.cb,.note',{opacity:0,y:14*k},.34);
+  add('.card',{opacity:0,y:42*k,scale:.96},.16,{st:.11,d:T.l});
+  add('.ci,.sy,.is,.og,.av span',{opacity:0,scale:.3,rotation:-24},.4,{st:.07});
+  add('.idx,.nm,.tt,.pic,.ca,.lk',{opacity:0,y:10*k},.34);
+  add('.wt,.mm',{opacity:0,y:14*k},.3);
+  add('.nd,.fcard',{opacity:0,scale:.7,y:14*k},.3,{st:.1,d:T.l});
+  add('.sc2>*,.ps>*',{opacity:0,y:10*k},.3,{st:.05});
+  add('.bars2 i',{scaleY:0,transformOrigin:'50% 100%'},.5,{st:.06});
+  add('.mtr span,.mt2 i',{scaleX:0,transformOrigin:ox},.55,{st:.1,d:T.l});
+  var g=q('.gt');if(g.length)tl.fromTo(g,{backgroundSize:'260% 100%',backgroundPosition:'100% 0'},{backgroundSize:'100% 100%',backgroundPosition:'0% 0',duration:T.l*1.4,ease:'power2.out',clearProps:'backgroundSize,backgroundPosition'},.25);
+  var o=q('.orb,.rg');if(o.length)tl.from(o,{opacity:0,duration:T.l,ease:'none',clearProps:'opacity'},0);
+  var d=q('.dr');if(d.length){all=all.concat(d);tl.fromTo(d,{strokeDashoffset:1},{strokeDashoffset:0,duration:1.6,ease:'power2.inOut',clearProps:'strokeDashoffset'},.45)}
+  var a=q('.ch path:not(.dr)');if(a.length)tl.from(a,{opacity:0,duration:T.l,ease:'power1.out',clearProps:'opacity'},.8);
+  q('.pm strong,.mm b,.proof strong,.fcard strong,.row b').forEach(function(e){count(e,tl,.34,counts)});
+  if(!all.length)return null;
+  /* hand the final state back to the CSS: .in/.rd keep .rv visible, .mo is dropped so hovers/transitions work again */
+  var rv=$$('.rv,.dr,.mtr,.bc',sc);rv.forEach(function(e){e.classList.add('in');if(e.classList.contains('rv'))e.classList.add('rd')});
+  var mo=all.concat($$('.rv',sc).filter(function(e){return!skip(e)}));mo.forEach(function(e){e.classList.add('mo')});reg.push(mo);
+  tl.eventCallback('onComplete',function(){mo.forEach(function(e){e.classList.remove('mo')})});
+  return tl;
+}
+
+function build(){
+  killStale();
+  mm=gsap.matchMedia();
+  mm.add({ok:'(prefers-reduced-motion: no-preference)',narrow:'(max-width: 900px)'},function(ctx){
+    if(!ctx.conditions.ok)return;                       /* reduced motion: natural flow, nothing changes */
+    var k=ctx.conditions.narrow?.6:1,scenes=$$('.scn',home),shades=[],marked=[];
+    if(scenes.length<2)return;
+
+    /* 1. classes first, so every start value GSAP reads comes from the final CSS state */
+    root.classList.add('stk');
+    scenes.forEach(function(s,i){
+      s.style.zIndex=i+1;                               /* later scene always paints above earlier ones */
+      if(i)s.classList.add('nx');
+      var d=document.createElement('div');d.className='scn-shade';d.setAttribute('aria-hidden','true');
+      s.appendChild(d);shades.push(d);
+      layers(s).forEach(function(l){l.classList.add('gl');marked.push(l)});
+    });
+    void root.offsetHeight;                             /* flush: CSS entrance animation is now off */
+
+    /* 2. hero entrance (was a CSS keyframe that GSAP captured mid-flight as a permanent +140px offset) */
+    var vis=$('.vis',home);
+    if(vis)gsap.fromTo(vis,{y:140*k,autoAlpha:0,filter:'blur(14px)'},{y:0,autoAlpha:1,filter:'blur(0px)',duration:1.3,delay:.2,ease:'power3.out',clearProps:'filter'});
+
+    /* 3. one coordinated scrubbed timeline per transition (top-to-bottom = correct refresh order) */
+    for(var i=0;i<scenes.length-1;i++){
+      var A=scenes[i],B=scenes[i+1],secs=$$(':scope > .sh',A),la=layers(A),lb=layers(B),phA=$$('.ph',A),phB=$$('.pbig',B);
+      var tl=gsap.timeline({defaults:{ease:'none'},scrollTrigger:{
+        id:'curtain-'+i,trigger:A,start:'bottom bottom',end:'+=100%',   /* B travels exactly one viewport to cover A */
+        pin:A,pinSpacing:false,anticipatePin:1,scrub:true,invalidateOnRefresh:true}});
+      /* outgoing: recedes (section scale/fade, layers drift up at different depths, scene dims) */
+      tl.fromTo(secs,{scale:1,opacity:1},{scale:.94,opacity:.35,duration:1,immediateRender:false},0)
+        .fromTo(la,{yPercent:0},{yPercent:function(j){return -(6+Math.min(j,5)*3)*k},duration:1,stagger:{amount:.12},immediateRender:false},0)
+        .fromTo(shades[i],{opacity:0},{opacity:.16,duration:1,immediateRender:false},0);
+      if(phA.length)tl.fromTo(phA,{rotation:0},{rotation:-4,duration:1,immediateRender:false},0);
+      /* incoming: content rides up with its panel, each layer at its own depth, settled before the edge lands */
+      tl.fromTo(lb,{y:function(j){return(48+j*18)*k},opacity:0,scale:.96},
+                   {y:0,opacity:1,scale:1,ease:'power2.out',duration:.7,stagger:{amount:.2}},.05);
+      if(phB.length)tl.fromTo(phB,{rotation:6,yPercent:8},{rotation:0,yPercent:0,ease:'power2.out',duration:.8},.05);
+    }
+
+    /* 4. heights can change after build (language/font/content): refresh only when a scene really resized */
+    if('ResizeObserver' in window){
+      var sig=function(){return scenes.map(function(s){return s.offsetHeight}).join()},last=sig();
+      ro=new ResizeObserver(function(){var n=sig();if(n!==last){last=n;refreshSoon()}});
+      scenes.forEach(function(s){ro.observe(s)});
+    }
+
+    /* 5. internal motion: shared trigger point (scene top at 50% of the viewport = curtain ~half way), played once */
+    var reg=[],counts=[];
+    scenes.forEach(function(sc,i){
+      var mt=sceneMotion(sc,ctx.conditions.narrow,reg,counts);if(!mt)return;
+      if(i===0)mt.delay(.25).play();
+      else ScrollTrigger.create({trigger:sc,start:'top 50%',once:true,onEnter:function(){mt.play()}});
+    });
+    /* Curtain pins alter the effective scroll geometry; refresh only after all timelines exist. */
+    requestAnimationFrame(function(){requestAnimationFrame(function(){if(root.classList.contains('stk'))ScrollTrigger.refresh()})});
+    return function(){                                   /* runs on revert: undo our DOM changes */
+      if(ro){ro.disconnect();ro=null}
+      reg.forEach(function(l){l.forEach(function(e){e.classList.remove('mo')})});counts.forEach(function(p){p[0].nodeValue=p[1]});
+      root.classList.remove('stk');
+      scenes.forEach(function(s){s.style.zIndex='';s.classList.remove('nx')});
+      marked.forEach(function(l){l.classList.remove('gl')});
+      shades.forEach(function(d){d.remove()});
+    };
+  });
+}
+/* build only while the Home view is visible; tear down (kills triggers, removes pin spacers) otherwise */
+function sync(){
+  var on=home.classList.contains('on');
+  if(on&&!mm)build();else if(!on&&mm){mm.revert();mm=null;killStale()}
+}
+new MutationObserver(sync).observe(home,{attributes:true,attributeFilter:['class']});
+/* inner pages: count-up statistics when they scroll into view (reveals themselves are the shared .rv system) */
+var views=$$('.view').filter(function(v){return v!==home}),mmv=null;
+function buildV(){
+  mmv=gsap.matchMedia();
+  mmv.add('(prefers-reduced-motion: no-preference)',function(){
+    var v=views.filter(function(x){return x.classList.contains('on')})[0],cs=[];if(!v)return;
+    $$('.sg strong,.sc strong',v).forEach(function(e){
+      var t=gsap.timeline({paused:true});count(e,t,0,cs);
+      ScrollTrigger.create({trigger:e,start:'top 90%',once:true,onEnter:function(){t.play()}});
+    });
+    requestAnimationFrame(function(){ScrollTrigger.refresh()});
+    return function(){cs.forEach(function(p){p[0].nodeValue=p[1]})};
+  });
+}
+function syncV(){if(mmv){mmv.revert();mmv=null}if(views.some(function(v){return v.classList.contains('on')}))buildV()}
+var vo=new MutationObserver(syncV);views.forEach(function(v){vo.observe(v,{attributes:true,attributeFilter:['class']})});
+syncV();
+
+/* language / direction / font changes alter heights */
+var rf=function(){requestAnimationFrame(function(){ScrollTrigger.refresh()})};
+new MutationObserver(rf).observe(root,{attributes:true,attributeFilter:['dir']});
+window.addEventListener('load',rf);
+window.addEventListener('pageshow',function(e){if(e.persisted)rf()});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(rf);
+sync();
+})();
+</script>
+<!-- Waave AI: contact, methodology, FAQ, privacy, terms added -->
+</body>
+</html>
+
+</body></html>
